@@ -10,7 +10,7 @@ public class Main {
         XmlMapper xmlMapper = new XmlMapper();
         try {
             Accounts accounts = xmlMapper.readValue(file,Accounts.class);
-            System.out.println(accounts.toString());
+            System.out.println(accounts.getAccount().get(2).getCurrency());
 
         } catch (IOException e) {
             e.printStackTrace();
