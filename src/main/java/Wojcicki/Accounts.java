@@ -1,12 +1,16 @@
+package Wojcicki;
+
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import lombok.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
 @Getter
 @Setter
 @ToString
+@XmlRootElement
 public class Accounts {
 
     @JacksonXmlElementWrapper(useWrapping = false)

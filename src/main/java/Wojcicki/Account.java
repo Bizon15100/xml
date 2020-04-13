@@ -1,6 +1,8 @@
+package Wojcicki;
+
 import lombok.*;
 
-import java.time.LocalDate;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Getter
 @Setter
@@ -15,5 +17,7 @@ public class Account {
     private String name;
     private double balance;
     private String closingDate;
+
+
 }
 
